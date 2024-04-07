@@ -2,3 +2,5 @@ openai
 pytesseract
 PyMuPDF
 matplotlib
+python-docx
+kivymd
