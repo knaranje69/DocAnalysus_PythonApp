@@ -1,0 +1,9 @@
+popup_content = BoxLayout(orientation='vertical')
+                scroll_view = ScrollView()
+                answer_label = Label(text=answer, halign='left', valign='top', size_hint_y=None)
+                answer_label.bind(size=answer_label.setter('text_size'))
+                scroll_view.add_widget(answer_label)
+                popup_content.add_widget(scroll_view)
+                
+                popup = Popup(title='Response', content=popup_content, size_hint=(None, None), size=(400, 400))
+                popup.open()
